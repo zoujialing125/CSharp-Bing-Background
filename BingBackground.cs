@@ -236,7 +236,7 @@ namespace BingBackground {
         {
             foreach (string FileName in Directory.EnumerateFiles(FolderName))
             {
-                if ((Directory.GetCreationTime(FileName).Date - DateTime.Today.Date).Days >= days)
+                if ((DateTime.Today.Date - Directory.GetCreationTime(FileName).Date).Days >= days)
                 {
                     File.Delete(FileName);
                     Console.WriteLine("Deleted image: " + FileName);
