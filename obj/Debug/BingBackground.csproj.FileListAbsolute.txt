@@ -57,3 +57,14 @@ C:\Users\jjz052\Documents\Visual Studio 2017\Projects\BingBackground\BingBackgro
 C:\Users\jjz052\Documents\Visual Studio 2017\Projects\BingBackground\BingBackground\obj\Debug\BingBackground.application
 C:\Users\jjz052\Documents\Visual Studio 2017\Projects\BingBackground\BingBackground\obj\Debug\BingBackground.exe
 C:\Users\jjz052\Documents\Visual Studio 2017\Projects\BingBackground\BingBackground\obj\Debug\BingBackground.pdb
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\bin\Debug\BingBackground.exe.config
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\bin\Debug\BingBackground.exe.manifest
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\bin\Debug\BingBackground.application
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\bin\Debug\BingBackground.exe
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\bin\Debug\BingBackground.pdb
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\bin\Debug\Newtonsoft.Json.dll
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\obj\Debug\BingBackground.exe.manifest
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\obj\Debug\BingBackground.application
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\obj\Debug\BingBackground.csproj.CopyComplete
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\obj\Debug\BingBackground.exe
+E:\Documents\Github\Source\Repos\CSharp-Bing-Background\obj\Debug\BingBackground.pdb

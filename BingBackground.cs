@@ -6,6 +6,8 @@ using System.IO;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Security;
 
 namespace BingBackground {
 
@@ -56,11 +58,24 @@ namespace BingBackground {
             
         }
 
+        private static bool CheckValidationResult(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors)
+        {
+            return true;
+        }
+
         private static dynamic DownloadJson() {
             using (WebClient webClient = new WebClient()) {
                 Console.WriteLine("Downloading JSON...");
                 try
                 {
+                    /*
+                    请求某些接口一直返回基础连接已关闭：发送时发生错误
+                    远程主机强迫关闭了一个现有的连接
+                    */
+                    ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
+                    ServicePointManager.Expect100Continue = false;
+                    ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
+
                     //Resolve the encoding issue for Chinese
                     webClient.Encoding = System.Text.Encoding.UTF8;
                     string jsonString = webClient.DownloadString("https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US");
